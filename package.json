@@ -1,0 +1,23 @@
+{
+    "name": "dom-stroll",
+    "version": "0.1.0",
+    "description": "Take a stroll through the DOM",
+    "private": true,
+    "main": "index.js",
+    "devDependencies": {
+      "tape": "*",
+			"browserify": "*",
+			"testling": "*",
+			"coverify": "*",
+      "brfs": "*"
+    },
+    "scripts": {
+      "test": "./node_modules/browserify/bin/cmd.js -t brfs -t coverify test/index.js | ./node_modules/testling/bin/cmd.js | ./node_modules/coverify/bin/cmd.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/orangemug/dom-stroll.git"
+    },
+    "homepage": "https://github.com/orangemug/dom-stroll",
+    "license": "MIT"
+}
