@@ -14,14 +14,18 @@
     "testling": {
       "files": "test/index.js",
       "browsers": {
-        "chrome": [ 20 ]
+        "ie": [8, 9, 10],
+        "firefox": [3.5, 25],
+        "chrome": [31.0],
+        "safari": [5.1],
+        "opera": [17]
       }
     },
     "browserify": {
       "transform": ["brfs"]
     },
     "scripts": {
-      "test": "./node_modules/browserify/bin/cmd.js -t brfs -t coverify test/index.js | ./node_modules/testling/bin/cmd.js | ./node_modules/coverify/bin/cmd.js"
+      "test": "./node_modules/testling/bin/cmd.js"
     },
     "repository": {
       "type": "git",
