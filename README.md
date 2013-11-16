@@ -1,6 +1,8 @@
 # dom-stroll
 Simple DOM traversal method
 
+[![browser support](https://ci.testling.com/orangemug/dom-stroll.png)](https://ci.testling.com/orangemug/dom-stroll)
+
 ## Usage
 
     var domStroll = require("dom-stroll");
